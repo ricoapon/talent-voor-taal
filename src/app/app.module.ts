@@ -9,6 +9,7 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {CollegaComponent} from './collega/collega.component';
 import {WerkgeverComponent} from './werkgever/werkgever.component';
+import {RouterModule} from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {WerkgeverComponent} from './werkgever/werkgever.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

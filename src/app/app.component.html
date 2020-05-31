@@ -17,12 +17,12 @@
       <hr/>
 
       <ul class="navbar-nav flex-column">
-        <li class="nav-item active"><a routerLink="/" class="nav-link">Home</a></li>
-        <li class="nav-item"><a routerLink="/voorstellen" class="nav-link">Voorstellen</a></li>
-        <li class="nav-item"><a routerLink="/cursist" class="nav-link">Cursist</a></li>
-        <li class="nav-item"><a routerLink="/werkgever" class="nav-link">Werkgever</a></li>
-        <li class="nav-item"><a routerLink="/collega" class="nav-link">Collega</a></li>
-        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+        <li class="nav-item"><a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }" class="nav-link">Home</a></li>
+        <li class="nav-item"><a routerLink="/voorstellen" routerLinkActive="active" class="nav-link">Voorstellen</a></li>
+        <li class="nav-item"><a routerLink="/cursist" routerLinkActive="active" class="nav-link">Cursist</a></li>
+        <li class="nav-item"><a routerLink="/werkgever" routerLinkActive="active" class="nav-link">Werkgever</a></li>
+        <li class="nav-item"><a routerLink="/collega" routerLinkActive="active" class="nav-link">Collega</a></li>
+        <li class="nav-item"><a routerLink="/contact" routerLinkActive="active" class="nav-link">Contact</a></li>
       </ul>
     </div>
   </nav>
