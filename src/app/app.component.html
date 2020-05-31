@@ -1,0 +1,37 @@
+<input type="hidden" name="version" value="{{version}}"/>
+
+<header class="header text-center">
+  <h4 class="text-white" id="title">Talent voor Taal</h4>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div id="navigation" class="collapse navbar-collapse flex-column">
+      <img alt="Corintha" src="assets/images/Corintha.jpg" class="rounded-circle pb-2"/>
+      <p style="font-size: 10pt">Ik ben Corintha Apon. Ik ben een docent die met veel enthousiasme de Nederlandse
+        taallessen verzorgt. Bij alle trainingen staat het leren door te doen centraal.</p>
+
+      <hr/>
+
+      <ul class="navbar-nav flex-column">
+        <li class="nav-item active"><a routerLink="/" class="nav-link">Home</a></li>
+        <li class="nav-item"><a routerLink="/voorstellen" class="nav-link">Voorstellen</a></li>
+        <li class="nav-item"><a routerLink="/cursist" class="nav-link">Cursist</a></li>
+        <li class="nav-item"><a routerLink="/werkgever" class="nav-link">Werkgever</a></li>
+        <li class="nav-item"><a routerLink="/collega" class="nav-link">Collega</a></li>
+        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<div class="wrapper">
+  <article>
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+  </article>
+</div>

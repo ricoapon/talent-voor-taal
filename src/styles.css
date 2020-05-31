@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background-color: #c0c0c0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #800080;
+  padding-top: 10px;
+}
+
+a {
+  color: #800080;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #800080;
+}
+
+.page-image {
+  height: 300px;
+}
