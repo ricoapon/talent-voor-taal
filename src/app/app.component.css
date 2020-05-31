@@ -27,6 +27,10 @@ header a:hover {
   color: #c0c0c0;
 }
 
+.list-inline-item img {
+  height: 40px;
+}
+
 /* Below is the styling specific parts that differ between mobile and desktop. */
 /* DESKTOP */
 @media (min-width: 992px) {
