@@ -10,6 +10,7 @@ import {ContactComponent} from './contact/contact.component';
 import {CollegaComponent} from './collega/collega.component';
 import {WerkgeverComponent} from './werkgever/werkgever.component';
 import {RouterModule} from '@angular/router';
+import { EnglishComponent } from './english/english.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {RouterModule} from '@angular/router';
     HomeComponent,
     ContactComponent,
     CollegaComponent,
-    WerkgeverComponent
+    WerkgeverComponent,
+    EnglishComponent
   ],
   imports: [
     BrowserModule,

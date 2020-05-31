@@ -6,11 +6,13 @@ import {CollegaComponent} from './collega/collega.component';
 import {ContactComponent} from './contact/contact.component';
 import {CursistComponent} from './cursist/cursist.component';
 import {WerkgeverComponent} from './werkgever/werkgever.component';
+import {EnglishComponent} from './english/english.component';
 
 const routes: Routes = [
   { path: 'collega', component: CollegaComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'cursist', component: CursistComponent },
+  { path: 'english', component: EnglishComponent },
   { path: 'voorstellen', component: VoorstellenComponent },
   { path: 'werkgever', component: WerkgeverComponent },
   { path: '', component: HomeComponent },
