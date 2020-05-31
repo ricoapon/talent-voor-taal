@@ -1,27 +1,48 @@
-# TalentVoorTaal
+# Talent voor Taal
+This file describes everything you need to know if you want to develop the website for Talent voor Taal.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+## Technical architecture
+### Framework and tools
+This website uses:
+* Node.js
+* npm
+* Angular 9
+* Bootstrap 4
 
-## Development server
+It is a very simple website without any fancy functionality. Uses the basic templating and routing functionality.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Heroku
+The website can be tested on a Heroku server. Heroku doesn't natively support Angular apps on the Node.js servers,
+so we need to add the Express framework. So we added a server.js file to run it.
 
-## Code scaffolding
+The `npm run start` command is overwritten for Heroku and must start the server.js instead. This should not be used locally.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Local development
+To be able to use this project locally, follow the manual of running Angular apps (see https://angular.io/guide/setup-local).
 
-## Build
+To run the app locally, use the command `npm run start:dev`.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Testing
+The changes need to be tested by the owner, so we use Heroku as the app to display the versions.
 
-## Running unit tests
+## Versioning
+The version that is stated in `package.json` is used inside the app.
+This version number is displayed in the application, but inside a hidden input tag with name "version".
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+When deploying a new version, follow these steps:
+1. Increment the version in package.json (using the major-minor-patch standard)
+2. Commit change to master
+3. Create an annotated tag with the new version (git tag -a X.Y.Z)
+4. Push the branch and tag 
 
-## Running end-to-end tests
+## Deploying to the real website
+Only Angular production builds are deployed to the server. There is no automatic flow for this, so we need to manually
+do to the following steps:
+1. Run "ng build --production" locally
+2. Open FileZilla and connect to "ftp.talentvoortaal.nl"
+3. Remove all application files from the directory `public_html`
+4. Copy the local files `/dist/talent-voor-taal` to the `public_html` directory
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+To be efficient, you can only copy changes files. For example, images and icons will take more time to copy, but aren't relevant
+if they haven't changed. Note that Angular creates several files with a hash in the name. It is best to remove these from the site
+before uploading the new changes.
