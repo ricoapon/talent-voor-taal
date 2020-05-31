@@ -8,17 +8,24 @@ import {CursistComponent} from './cursist/cursist.component';
 import {WerkgeverComponent} from './werkgever/werkgever.component';
 import {EnglishComponent} from './english/english.component';
 
-const routes: Routes = [
-  { path: 'collega', component: CollegaComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'cursist', component: CursistComponent },
-  { path: 'english', component: EnglishComponent },
-  { path: 'voorstellen', component: VoorstellenComponent },
-  { path: 'werkgever', component: WerkgeverComponent },
-  { path: '', component: HomeComponent },
+/* This element is used to dynamically generate the links in the navigation bar. */
+export const navRoutes: Routes = [
+  { path: 'collega', component: CollegaComponent, data: {name: 'Collega', screenOrder: 5} },
+  { path: 'contact', component: ContactComponent, data: {name: 'Contact', screenOrder: 7} },
+  { path: 'cursist', component: CursistComponent, data: {name: 'Cursist', screenOrder: 3} },
+  { path: 'english', component: EnglishComponent, data: {name: 'English', screenOrder: 6} },
+  { path: 'voorstellen', component: VoorstellenComponent, data: {name: 'Voorstellen', screenOrder: 2} },
+  { path: 'werkgever', component: WerkgeverComponent, data: {name: 'Werkgever', screenOrder: 4} },
+
+  { path: '', component: HomeComponent, data: {name: "Home", screenOrder: 1} },
+]
+
+const otherRoutes: Routes = [
   // Redirect to home if path is not registered.
   { path: '**', redirectTo: '' }
-];
+]
+
+const routes: Routes = navRoutes.concat(otherRoutes);
 
 @NgModule({
   declarations: [],
