@@ -24,7 +24,7 @@
       <hr/>
 
       <ul class="navbar-nav flex-column text-left">
-        <li *ngFor="let route of navigationRoutes" class="nav-item">
+        <li *ngFor="let route of navigationRoutes">
           <!-- To make sure that the root url (for Home) is only shown as active when really on the home page,
                we need to add the exact option. This has no effect on the other links. -->
             <a routerLink="{{route.path}}"
