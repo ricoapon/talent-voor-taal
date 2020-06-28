@@ -27,12 +27,11 @@
         <li *ngFor="let route of navigationRoutes">
           <!-- To make sure that the root url (for Home) is only shown as active when really on the home page,
                we need to add the exact option. This has no effect on the other links. -->
-            <a routerLink="{{route.path}}"
-               routerLinkActive="active"
-               [routerLinkActiveOptions]="{ exact: true }"
-               class="nav-link">
-              <i [ngClass]="route.data.iconClass" style="width: 16px; height: 16px; padding-right: 30px;"></i>{{route.data.name}}
-            </a>
+          <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+             class="nav-link" data-toggle="collapse" data-target="#navigation">
+            <i [ngClass]="route.data.iconClass"
+               style="width: 16px; height: 16px; padding-right: 30px;"></i>{{route.data.name}}
+          </a>
         </li>
       </ul>
     </div>
