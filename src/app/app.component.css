@@ -53,6 +53,14 @@ header a:hover {
   .container {
     max-width: 1200px;
   }
+
+  .display-mobile-only {
+    display: none !important;
+  }
+
+  .display-desktop-only {
+    display: block !important;
+  }
 }
 
 /* MOBILE */
@@ -71,6 +79,14 @@ header a:hover {
 
   article {
     padding-top: 10px;
+  }
+
+  .display-mobile-only {
+    display: block !important;
+  }
+
+  .display-desktop-only {
+    display: none !important;
   }
 }
 

@@ -27,12 +27,27 @@
         <li *ngFor="let route of navigationRoutes">
           <!-- To make sure that the root url (for Home) is only shown as active when really on the home page,
                we need to add the exact option. This has no effect on the other links. -->
-          <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-             class="nav-link" data-toggle="collapse" data-target="#navigation">
-            <i [ngClass]="route.data.iconClass" class="fa-fw"
-               style="padding-right: 30px;"></i>{{route.data.name}}
-          </a>
+
+          <!-- When in mobile mode, we want to collapse the bar when clicking on a link. This must not be the case
+               in desktop mode. The easiest way to achieve this, is by showing two different links, one with the
+               data-toggle and one without. The rest of the items should be identical. -->
+          <div class="display-mobile-only">
+            <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+               class="nav-link"
+               data-toggle="collapse" data-target="#navigation">
+              <i [ngClass]="route.data.iconClass" class="fa-fw"
+                 style="padding-right: 30px;"></i>{{route.data.name}}
+            </a>
+          </div>
+          <div class="display-desktop-only">
+            <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+               class="nav-link">
+              <i [ngClass]="route.data.iconClass" class="fa-fw"
+                 style="padding-right: 30px;"></i>{{route.data.name}}
+            </a>
+          </div>
         </li>
+
       </ul>
     </div>
   </nav>
