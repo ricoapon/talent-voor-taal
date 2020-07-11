@@ -29,8 +29,8 @@
                we need to add the exact option. This has no effect on the other links. -->
           <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
              class="nav-link" data-toggle="collapse" data-target="#navigation">
-            <i [ngClass]="route.data.iconClass"
-               style="width: 16px; height: 16px; padding-right: 30px;"></i>{{route.data.name}}
+            <i [ngClass]="route.data.iconClass" class="fa-fw"
+               style="padding-right: 30px;"></i>{{route.data.name}}
           </a>
         </li>
       </ul>
