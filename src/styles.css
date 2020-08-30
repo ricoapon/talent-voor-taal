@@ -19,16 +19,7 @@ a:hover {
   color: #800080;
 }
 
-/* Make the shown images different sizes based on the screen size.  */
-/* DESKTOP */
-@media (min-width: 992px) {
-  .page-image {
-    height: 300px;
-  }
-}
-/* MOBILE */
-@media (max-width: 991px) {
-  .page-image {
-    height: 210px;
-  }
+/* Show images on pages with the same width as the container. */
+.page-image {
+  width: 100%;
 }
