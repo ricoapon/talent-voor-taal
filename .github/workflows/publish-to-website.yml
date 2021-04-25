@@ -1,0 +1,27 @@
+name: Publish to website
+on:
+  release:
+    types: [published]
+jobs:
+  web-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Install NodeJS
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - name: Build project
+        run: |
+          npm install
+          npm run-script build --prod
+      - name: Publish code to website
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          # For this example, I will dry-run first.
+          dry-run: true
+          server-dir: public_html/rico/
