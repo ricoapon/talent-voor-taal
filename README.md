@@ -1,4 +1,5 @@
-[![Deployment](https://img.shields.io/badge/deployment-Heroku-brightgreen)](https://talent-voor-taal.herokuapp.com/)
+[![Test deployment](https://img.shields.io/badge/Test%20deployment-HEROKU-%3CCOLOR%3E?style=for-the-badge)](https://talent-voor-taal.herokuapp.com/)
+[![Deployment](https://img.shields.io/badge/Production%20deployment-FTP%20DEPLOY%20ACTION-%3CCOLOR%3E?style=for-the-badge)](https://talentvoortaal.nl/)
 
 # Talent voor Taal
 This file describes everything you need to know if you want to develop the website for Talent voor Taal.
