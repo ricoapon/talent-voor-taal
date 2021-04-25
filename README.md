@@ -8,7 +8,7 @@ This file describes everything you need to know if you want to develop the websi
 This website uses:
 * Node.js
 * npm
-* Angular 9
+* Angular 11
 * Bootstrap 4
 
 It is a very simple website without any fancy functionality. Uses the basic templating and routing functionality.
@@ -38,13 +38,4 @@ When deploying a new version, follow these steps:
 4. Push the branch and tag 
 
 ## Deploying to the real website
-Only Angular production builds are deployed to the server. There is no automatic flow for this, so we need to manually
-do to the following steps:
-1. Run "ng build --production" locally
-2. Open FileZilla and connect to "ftp.talentvoortaal.nl"
-3. Remove all application files from the directory `public_html`
-4. Copy the local files `/dist/talent-voor-taal` to the `public_html` directory
-
-To be efficient, you can only copy changes files. For example, images and icons will take more time to copy, but aren't relevant
-if they haven't changed. Note that Angular creates several files with a hash in the name. It is best to remove these from the site
-before uploading the new changes.
+Publish a new release to automatically deploy to the website! See the Github Action publish-to-website.yml for the technical working.
