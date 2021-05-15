@@ -15,7 +15,7 @@ jobs:
       - name: Build project
         run: |
           npm install
-          npm run-script build --prod
+          npm run build:prod
       - name: Publish code to website
         uses: SamKirkland/FTP-Deploy-Action@4.0.0
         with:
