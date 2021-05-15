@@ -3,10 +3,10 @@
   "version": "0.3.1",
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "start:dev": "ng serve",
+    "start": "ng serve",
     "build": "ng build",
-    "heroku-postbuild": "ng build --prod"
+    "build:github-pages": "bash build.sh github-pages",
+    "build:prod": "bash build.sh prod"
   },
   "private": true,
   "dependencies": {
