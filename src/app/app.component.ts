@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { version } from '../../package.json';
 import { navRoutes } from './app-routing.module';
 import { Routes} from '@angular/router';
+import {VERSION} from "../environments/version";
 
 @Component({
   selector: 'app-root',
@@ -12,7 +12,7 @@ import { Routes} from '@angular/router';
  * The component in which each page will be loaded.
  */
 export class AppComponent {
-  public version: string = version;
+  public version: string = VERSION;
   public navigationRoutes: Routes = this.sortedRoutes();
 
   sortedRoutes(): Routes {
