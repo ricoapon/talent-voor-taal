@@ -31,6 +31,11 @@ header a:hover {
   height: 40px;
 }
 
+.footer {
+  background-color: #c0c0c0;
+  color: white;
+}
+
 /* Below is the styling specific parts that differ between mobile and desktop. */
 /* DESKTOP */
 @media (min-width: 992px) {
@@ -87,6 +92,11 @@ header a:hover {
 
   .display-desktop-only {
     display: none !important;
+  }
+
+  .wrapper {
+    padding-top: 56px;
+    margin-top: -56px;
   }
 }
 

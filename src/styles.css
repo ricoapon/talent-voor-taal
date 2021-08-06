@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+body, html {
+  min-height: 100%;
+}
+
 body {
   background-color: #ffffff;
+  height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
