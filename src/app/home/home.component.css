@@ -1,0 +1,15 @@
+#carousel-quotes {
+  background-color: #800080;
+  color: white
+}
+
+@media (max-width: 991px) {
+  #carousel-quotes {
+    height: 136px;
+  }
+}
+@media (min-width: 992px) {
+  #carousel-quotes {
+    height: 88px;
+  }
+}
