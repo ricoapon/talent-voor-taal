@@ -11,13 +11,14 @@
   padding-right: 40px;
 }
 
-@media (max-width: 991px) {
-  #carousel-quotes {
-    height: 136px;
-  }
-}
-@media (min-width: 992px) {
-  #carousel-quotes {
-    height: 118px;
-  }
+.carousel-inner > .hidden {
+  /* We cannot use display: hidden, since we need the size to be registered. So use opacity 0. */
+  opacity: 0;
+  display: block;
+
+  /* Same css as from .carousel-item. */
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
 }
