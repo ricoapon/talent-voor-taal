@@ -1,6 +1,14 @@
 #carousel-quotes {
-  background-color: #800080;
-  color: white
+  background-color: #c0c0c0;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+}
+
+.carousel-inner {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 @media (max-width: 991px) {
@@ -10,6 +18,6 @@
 }
 @media (min-width: 992px) {
   #carousel-quotes {
-    height: 88px;
+    height: 118px;
   }
 }
