@@ -1,15 +1,24 @@
 #carousel-quotes {
-  background-color: #800080;
-  color: white
+  background-color: #c0c0c0;
 }
 
-@media (max-width: 991px) {
-  #carousel-quotes {
-    height: 136px;
-  }
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
 }
-@media (min-width: 992px) {
-  #carousel-quotes {
-    height: 88px;
-  }
+
+.carousel-inner {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.carousel-inner > .hidden {
+  /* We cannot use display: hidden, since we need the size to be registered. So use opacity 0. */
+  opacity: 0;
+  display: block;
+
+  /* Same css as from .carousel-item. */
+  position: relative;
+  float: left;
+  width: 100%;
+  margin-right: -100%;
 }
