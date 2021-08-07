@@ -3,8 +3,8 @@
 <header class="header text-center">
   <h4 class="text-white" id="title">Talent voor Taal</h4>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+  <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -22,18 +22,18 @@
 
       <hr/>
 
-      <ul class="navbar-nav flex-column text-left">
+      <ul class="navbar-nav flex-column text-start">
         <li *ngFor="let route of navigationRoutes">
           <!-- To make sure that the root url (for Home) is only shown as active when really on the home page,
                we need to add the exact option. This has no effect on the other links. -->
 
           <!-- When in mobile mode, we want to collapse the bar when clicking on a link. This must not be the case
                in desktop mode. The easiest way to achieve this, is by showing two different links, one with the
-               data-toggle and one without. The rest of the items should be identical. -->
+               data-bs-toggle and one without. The rest of the items should be identical. -->
           <div class="display-mobile-only">
             <a routerLink="{{route.path}}" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
                class="nav-link"
-               data-toggle="collapse" data-target="#navigation">
+               data-bs-toggle="collapse" data-bs-target="#navigation">
               <i [ngClass]="route.data.iconClass" class="fa-fw"
                  style="padding-right: 30px;"></i>{{route.data.name}}
             </a>
@@ -46,7 +46,6 @@
             </a>
           </div>
         </li>
-
       </ul>
     </div>
   </nav>

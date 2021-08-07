@@ -17,6 +17,7 @@ header hr {
   width: 100%;
   height: 1px;
   background-color: #ffffff;
+  opacity: 100%;
 }
 
 header a {
