@@ -10,3 +10,20 @@ ul > li:before {
   width: 1em;
   margin-left: -1em;
 }
+
+.logo {
+  filter: grayscale(100%);
+  height: 50px;
+  padding-right: 40px;
+}
+
+#carousel-logos {
+  background-color: #c0c0c0;
+}
+.carousel-control-prev, .carousel-control-next {
+  width: 40px;
+}
+.carousel-inner {
+  padding-left: 40px;
+  padding-right: 40px;
+}
