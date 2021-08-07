@@ -53,3 +53,14 @@
     me enorm veel geleerd en ik leer nog steeds.
   </li>
 </ul>
+
+<owl-carousel-o [options]="customOptions">
+  <!-- We add the padding of the images to the width. -->
+  <ng-template carouselSlide *ngFor="let image of images" [width]="image.width + 40">
+    <img [src]="'assets/images/logos/' + image.filename"
+         [alt]="image.filename"
+         class="logo"/>
+  </ng-template>
+</owl-carousel-o>
+
+<p></p>
