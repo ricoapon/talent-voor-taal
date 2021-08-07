@@ -11,6 +11,8 @@ import {CollegaComponent} from './collega/collega.component';
 import {RouterModule} from '@angular/router';
 import { EnglishComponent } from './english/english.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {CarouselModule} from "ngx-owl-carousel-o";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ExpertiseComponent } from './expertise/expertise.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule
+    RouterModule,
+    BrowserAnimationsModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]
