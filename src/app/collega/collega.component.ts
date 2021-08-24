@@ -10,7 +10,7 @@ export class CollegaComponent implements OnInit {
   images: Image[] = [
     {filename: 'BiebaandeVliet.png', width: 129},
     {filename: 'BiebaanZet.svg', width: 140},
-    {filename: 'Bisbee.png', width: 50},
+    {filename: 'Bisbee.png', width: 89},
     {filename: 'CompanyWebcast.png', width: 240},
     {filename: 'Florence.png', width: 126},
     {filename: 'Foxtaal.png', width: 115},
