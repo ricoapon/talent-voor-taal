@@ -10,7 +10,7 @@ export class CollegaComponent implements OnInit {
   images: Image[] = [
     {filename: 'BiebaandeVliet.png', width: 129},
     {filename: 'BiebaanZet.svg', width: 140},
-    {filename: 'Bisbee.png', width: 50},
+    {filename: 'Bisbee.png', width: 89},
     {filename: 'CompanyWebcast.png', width: 240},
     {filename: 'Florence.png', width: 126},
     {filename: 'Foxtaal.png', width: 115},
@@ -23,13 +23,14 @@ export class CollegaComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 2950,
+    navSpeed: 1500,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     nav: false,
     dots: true,
-    navSpeed: 700,
     autoWidth: true,
   };
 
