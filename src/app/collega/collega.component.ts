@@ -23,13 +23,14 @@ export class CollegaComponent implements OnInit {
   customOptions: OwlOptions = {
     loop: true,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3000,
+    autoplaySpeed: 2950,
+    navSpeed: 1500,
     mouseDrag: false,
     touchDrag: false,
     pullDrag: false,
     nav: false,
     dots: true,
-    navSpeed: 700,
     autoWidth: true,
   };
 
