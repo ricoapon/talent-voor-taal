@@ -10,20 +10,28 @@ declare var bootstrap: any;
 export class HomeComponent implements OnInit {
   quotes: Quote[] = [
     {
-      author: 'Marzena',
+      author: 'Marzena, privécursiste',
       message: 'Met Corintha werk ik altijd heel goed samen. De lessen met haar zijn erg interessant. Ik stel ook haar gevoel voor humor op prijs. De echte lerares!'
     },
     {
-      author: 'Zeynep',
+      author: 'Contactpersoon Bibliotheek aan de Vliet',
+      message: 'Deskundig, toegankelijk, duidelijke communicatie en betrokkenheid zijn de woorden die ik kies om de samenwerking met jou te omschrijven.'
+    },
+    {
+      author: 'NT2-stagiaire',
+      message: 'Ik ben heel blij dat ik de stap heb genomen om bij jou stage te lopen. Je hebt me enorm veel geleerd.'
+    },
+    {
+      author: 'Zeynep, privécursiste',
       message: 'I advise Corintha to most of my friends because I think she is very helpful, very kind and teach me a lot.'
     },
     {
-      author: 'Ana',
-      message: 'Ik heb meer durf om met andere mensen te praten.'
+      author: 'Docent workshop Bisbee',
+      message: 'Goede docent, duidelijk, gestructureerd en respectvol.'
     },
     {
-      author: 'Atilla',
-      message: 'Ik heb goed nieuws, we zijn met een 9 geslaagd voor het leesexamen. Dank je wel Corintha!'
+      author: 'Ana, privécursiste',
+      message: 'Ik vind Nederlands leren heel leuk met jou. Ik heb meer durf om met andere mensen Nederlands te praten.'
     },
   ]
 
