@@ -9,8 +9,7 @@ import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {WatZeggenAnderenComponent} from './wat-zeggen-anderen/wat-zeggen-anderen.component';
 import {RouterModule} from '@angular/router';
-import { EnglishComponent } from './english/english.component';
-import { ExpertiseComponent } from './expertise/expertise.component';
+import {EnglishComponent} from './english/english.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {CarouselModule} from "ngx-owl-carousel-o";
 
@@ -22,8 +21,7 @@ import {CarouselModule} from "ngx-owl-carousel-o";
     HomeComponent,
     ContactComponent,
     WatZeggenAnderenComponent,
-    EnglishComponent,
-    ExpertiseComponent
+    EnglishComponent
   ],
   imports: [
     BrowserModule,
@@ -35,4 +33,5 @@ import {CarouselModule} from "ngx-owl-carousel-o";
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
