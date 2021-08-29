@@ -7,7 +7,7 @@ import {WatKanIkVoorJeDoenComponent} from './wat-kan-ik-voor-je-doen/wat-kan-ik-
 import {WieIsCorinthaComponent} from './wie-is-corintha/wie-is-corintha.component';
 import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
-import {CollegaComponent} from './collega/collega.component';
+import {WatZeggenAnderenComponent} from './wat-zeggen-anderen/wat-zeggen-anderen.component';
 import {RouterModule} from '@angular/router';
 import { EnglishComponent } from './english/english.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
@@ -21,7 +21,7 @@ import {CarouselModule} from "ngx-owl-carousel-o";
     WieIsCorinthaComponent,
     HomeComponent,
     ContactComponent,
-    CollegaComponent,
+    WatZeggenAnderenComponent,
     EnglishComponent,
     ExpertiseComponent
   ],
