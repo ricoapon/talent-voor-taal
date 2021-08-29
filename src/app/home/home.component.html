@@ -26,8 +26,8 @@
   <div class="carousel-inner px-4 pb-4">
     <!-- Block with zero opacity to make sure that all the items will stay the same size. -->
     <div class="p-4 hidden">
-      <p class="quote">"{{quotes[0].message}}"</p>
-      <p class="quote-footer">{{quotes[0].author}}</p>
+      <p class="quote">"{{quotes[1].message}}"</p>
+      <p class="quote-footer">{{quotes[1].author}}</p>
     </div>
 
     <div class="carousel-item p-4" *ngFor="let quote of quotes; first as isFirst" [class.active]="isFirst">
