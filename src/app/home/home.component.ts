@@ -8,6 +8,7 @@ declare var bootstrap: any;
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  // Whenever changing the quotes, make sure that the "largest" quotes is the invisible one.
   quotes: Quote[] = [
     {
       author: 'Marzena, privécursiste',

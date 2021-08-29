@@ -3,11 +3,11 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
-import {CursistComponent} from './cursist/cursist.component';
-import {VoorstellenComponent} from './voorstellen/voorstellen.component';
+import {WatKanIkVoorJeDoenComponent} from './wat-kan-ik-voor-je-doen/wat-kan-ik-voor-je-doen.component';
+import {WieIsCorinthaComponent} from './wie-is-corintha/wie-is-corintha.component';
 import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
-import {CollegaComponent} from './collega/collega.component';
+import {WatZeggenAnderenComponent} from './wat-zeggen-anderen/wat-zeggen-anderen.component';
 import {RouterModule} from '@angular/router';
 import { EnglishComponent } from './english/english.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
@@ -17,11 +17,11 @@ import {CarouselModule} from "ngx-owl-carousel-o";
 @NgModule({
   declarations: [
     AppComponent,
-    CursistComponent,
-    VoorstellenComponent,
+    WatKanIkVoorJeDoenComponent,
+    WieIsCorinthaComponent,
     HomeComponent,
     ContactComponent,
-    CollegaComponent,
+    WatZeggenAnderenComponent,
     EnglishComponent,
     ExpertiseComponent
   ],

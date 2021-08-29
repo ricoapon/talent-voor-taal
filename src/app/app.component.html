@@ -4,6 +4,9 @@
   <h4 class="text-white" id="title">Talent voor Taal</h4>
 
   <nav class="navbar navbar-expand-lg navbar-dark px-3">
+    <!-- Add empty element to make sure that the navbar-toggler shows on the right side of the navigation bar. -->
+    <span></span>
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -13,14 +16,14 @@
       <img alt="Corintha" src="assets/images/Corintha.jpg" class="rounded-circle pb-2"/>
       <p style="font-size: 10pt">Mijn naam is Corintha Apon. Ik help je met het leren van de Nederlandse taal.</p>
 
-      <ul class="list-inline mb-0">
+      <ul class="list-inline mb-0 display-desktop-only">
         <li class="list-inline-item"><a target="_blank" href="https://www.facebook.com/TalentvoorTaal"><img
           alt="Facebook" src="assets/svgs/facebook.svg"></a></li>
         <li class="list-inline-item"><a target="_blank" href="https://nl.linkedin.com/in/corinthaapon"><img
           alt="LinkedIn" src="assets/svgs/linked_in.svg"></a></li>
       </ul>
 
-      <hr/>
+      <hr class="display-desktop-only"/>
 
       <ul class="navbar-nav flex-column text-start">
         <li *ngFor="let route of navigationRoutes">
@@ -58,7 +61,7 @@
     </div>
   </article>
 
-  <footer class="footer mt-auto text-center py-2">
+  <footer class="footer mt-auto text-center py-2 px-3">
     Corintha Apon | M 06 4886 1056 | info@talentvoortaal.nl
   </footer>
 </div>

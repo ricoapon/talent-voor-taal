@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {OwlOptions} from "ngx-owl-carousel-o";
 
 @Component({
-  selector: 'app-collega',
-  templateUrl: './collega.component.html',
-  styleUrls: ['./collega.component.css']
+  selector: 'app-wat-zeggen-anderen',
+  templateUrl: './wat-zeggen-anderen.component.html',
+  styleUrls: ['./wat-zeggen-anderen.component.css']
 })
-export class CollegaComponent implements OnInit {
+export class WatZeggenAnderenComponent implements OnInit {
   images: Image[] = [
     {filename: 'BiebaandeVliet.png', width: 129},
     {filename: 'BiebaanZet.svg', width: 140},
