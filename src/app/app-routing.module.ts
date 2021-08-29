@@ -1,6 +1,6 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
-import {VoorstellenComponent} from './voorstellen/voorstellen.component';
+import {WieIsCorinthaComponent} from './wie-is-corintha/wie-is-corintha.component';
 import {HomeComponent} from './home/home.component';
 import {CollegaComponent} from './collega/collega.component';
 import {ContactComponent} from './contact/contact.component';
@@ -10,7 +10,7 @@ import {ExpertiseComponent} from "./expertise/expertise.component";
 
 /* This element is used to dynamically generate the links in the navigation bar. */
 export const navRoutes: Routes = [
-  { path: 'voorstellen', component: VoorstellenComponent, data: {name: 'Wie is Corintha?', screenOrder: 2, iconClass: 'fas fa-user'} },
+  { path: 'wie-is-corintha', component: WieIsCorinthaComponent, data: {name: 'Wie is Corintha?', screenOrder: 2, iconClass: 'fas fa-user'} },
   { path: 'cursist', component: CursistComponent, data: {name: 'Wat kan ik voor je doen?', screenOrder: 3, iconClass: 'fas fa-graduation-cap'} },
   { path: 'collega', component: CollegaComponent, data: {name: 'Wat zeggen anderen?', screenOrder: 4, iconClass: 'fas fa-people-arrows'} },
   { path: 'expertise', component: ExpertiseComponent, data: {name: 'Expertise doorgeven', screenOrder: 5, iconClass: 'fas fa-people-arrows'} },

@@ -4,7 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {AppRoutingModule} from './app-routing.module';
 import {CursistComponent} from './cursist/cursist.component';
-import {VoorstellenComponent} from './voorstellen/voorstellen.component';
+import {WieIsCorinthaComponent} from './wie-is-corintha/wie-is-corintha.component';
 import {HomeComponent} from './home/home.component';
 import {ContactComponent} from './contact/contact.component';
 import {CollegaComponent} from './collega/collega.component';
@@ -18,7 +18,7 @@ import {CarouselModule} from "ngx-owl-carousel-o";
   declarations: [
     AppComponent,
     CursistComponent,
-    VoorstellenComponent,
+    WieIsCorinthaComponent,
     HomeComponent,
     ContactComponent,
     CollegaComponent,
