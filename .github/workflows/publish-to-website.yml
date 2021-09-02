@@ -24,5 +24,3 @@ jobs:
           password: ${{ secrets.FTP_PASSWORD }}
           server-dir: public_html/
           local-dir: dist/talent-voor-taal/
-          # Remove this only when website can go live!
-          dry-run: true
